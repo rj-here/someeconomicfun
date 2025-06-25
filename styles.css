@@ -23,6 +23,9 @@ p {
 color: rgb(0, 22, 0);
 font-size: 15px;
 }
+button {
+    background-color: rgb(102, 169, 1);
+}
 footer {
     background-color: rgb(152, 241, 152);
 }
