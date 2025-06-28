@@ -15,3 +15,7 @@ function demandSupply() {
         output.innerHTML = "The quantity demanded is less than the quantity supplied, so it's a surplus!";
     }
 }
+
+function exchangeRates() {
+    var output = document.getElementById("output");
+}
