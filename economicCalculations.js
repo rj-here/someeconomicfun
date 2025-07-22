@@ -29,6 +29,6 @@ function exchangeRates() {
     var priceResult = price * (rate2/rate1); //To get the equivalent price
 
     document.getElementById("result").innerHTML = "The equivalent price of the product, priced at " + price.toFixed(2) + " " + currency1 +  "would be " + priceResult.toFixed(2) + " " + currency2 + " (approximately)"; //Updating output
-    output.innerHTML = "The equivalent price of the product, priced at " + price.toFixed(2) + " " + currency1 + "would be " + priceResult.toFixed(2) + " " + currency2 + " (approximately)"; //Printing output
+    output.innerHTML = "The equivalent price of the product, priced at " + price.toFixed(2) + " " + currency1 + " would be " + priceResult.toFixed(2) + " " + currency2 + " (approximately)"; //Printing output
 
 }
