@@ -20,15 +20,15 @@ function demandSupply() {
 function exchangeRates() {
     //This function looks to help users determine the equivalent prices across exchange rates, helping them determine where is it better to buy from?
     var output = document.getElementById("output");
-    var rate1 = parseFloat(prompt("What is the first exchange rate? This one will be the currency which comparisons would be made to.")); //Will compare with this currency
-    var currency1 = prompt("What currency? This will be the one I will return in"); //
-    var rate2 = parseFloat(prompt("What is the second exchange rate? This is the currency the price will be returned in")); //The currency to output with
-    var currency2 = prompt("What currency? This will be the one I will compare to");
+    var rate1 = parseFloat(prompt("What is the first exchange rate value? This one will be the currency which comparisons would be made to.")); //Will compare with this currency
+    var currency1 = prompt("What is the said currency? This will be the one I will return the final result in"); //
+    var rate2 = parseFloat(prompt("What is the second exchange rate value? This is the currency the price will be returned in")); //The currency to output with
+    var currency2 = prompt("What is the said currency? This will be the one I will compare to");
     var price = parseFloat(prompt("What is the price of the product? [in rate 1]")); //The price
 
     var priceResult = price * (rate2/rate1); //To get the equivalent price
 
-    document.getElementById("result").innerHTML = "The equivalent price of the product, priced at " + price.toFixed(2) + " " + currency1 +  "would be " + priceResult.toFixed(2) + " " + currency2 + " (approximately)"; //Updating output
+    document.getElementById("result").innerHTML = "The equivalent price of the product, priced at " + price.toFixed(2) + " " + currency1 +  " would be " + priceResult.toFixed(2) + " " + currency2 + " (approximately)"; //Updating output
     output.innerHTML = "The equivalent price of the product, priced at " + price.toFixed(2) + " " + currency1 + " would be " + priceResult.toFixed(2) + " " + currency2 + " (approximately)"; //Printing output
 
 }
